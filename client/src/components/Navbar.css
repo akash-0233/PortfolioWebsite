@@ -1,0 +1,44 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #3333336c;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  .header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+  
+  .header nav ul li {
+    margin: 0 15px;
+  }
+  
+  .header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .header nav ul li a:hover {
+    color: #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .header nav ul {
+      /* flex-direction: column; */
+      font-size: 0.7rem;
+    }
+  
+    .header nav ul li {
+      /* margin: 10px 0; */
+    }
+  }
+  
