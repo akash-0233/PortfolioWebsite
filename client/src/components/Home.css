@@ -1,49 +1,116 @@
-.home {
-    display:flex;
-    align-items: center;
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 23px 0;
+}
+
+.firstSection > div {
+  width: 60%;
+  /* background-color: red; */
+}
+
+.leftSection {
+  font-size: 3rem;
+  margin: 30px 0;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#hi{
+  font-size: 2rem;
+  color: gray;
+}
+
+.rightSection{
+  display: flex;
+  justify-content: center;
+}
+.rightSection img{
+  width: 80%;
+}
+
+
+
+.HR{
+  border: 0;
+  background-color: rgb(10, 104, 186);
+  height: 1.5px;
+  margin: 40px 84px;
+}
+
+/* Second Section */
+.secondSection{
+  max-width:80vw;
+  margin: auto;
+  height: 900px;
+}
+
+.secondSection h1{
+  font-size: 1.9rem
+}
+
+.secondSection .box{
+  background-color: rgb(121, 18, 18);
+  width: 80vw;
+  height: 2px;
+  margin: 56px 0;
+  display:flex ;
+}
+
+.secondSection .vertical{
+  height: 93px;
+  width: 1px;
+  margin:0 100px;
+  background-color:rgb(121, 18, 18) ;
+}
+
+
+
+/* Utility classes */
+
+.purple{
+  color: rgb(94, 8, 175);
+}
+
+.text-gray{
+  color: gray;
+}
+@media (max-width: 1000px) {
+  .firstSection > div{
+    width: fit-content;
+  }
+  .rightSection img{
+    width: 50%;
+    display: flex;
     justify-content: center;
-    height: 100vh;
-    width: 100%;
-    /* background: url('/path/to/your/hero-image.jpg') no-repeat center center; */
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding-top: 60px; /* Offset for fixed header */
   }
-  
-  .hero {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    border-radius: 10px;
-   
+  .firstSection{
+    flex-direction: column-reverse;
   }
-  .img{
-    /* width: 50%; */
-    background-color: pink;
-    scale: 1.3;
-    margin: 3rem 0 0 0;
+  .leftSection{
+    font-size: 2rem;
+    /* background-color: red; */
   }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero p {
+  #hi{
     font-size: 1.5rem;
+    margin: 1rem 0 ;
   }
-  
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2rem;
-    }
-    .home{
-        flex-direction: column;
-    }
- 
-  
-    .hero p {
-      font-size: 1.2rem;
-    }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
   }
-  
+
+  .home {
+    flex-direction: column;
+  }
+
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
