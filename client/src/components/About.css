@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 4rem;
+  padding: 2rem;
   margin: auto;
   background-color: #fff;
   border-radius: 10px;
@@ -22,7 +22,7 @@ body {
   border-radius: 10px;
   margin-right: 20px;
   display: flex;
-  width: 50%;
+  width: 40%;  
 }
 
 .profile-pic img {
@@ -30,7 +30,7 @@ body {
 }
 
 .text-content {
-  width: 50%;
+  width: 60%;
 }
 
 .about-container h1 {
@@ -41,9 +41,10 @@ body {
 }
 
 .about-container h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   color: #777;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .about-container p {

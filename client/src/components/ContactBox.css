@@ -13,11 +13,14 @@ body {
     padding: 2rem;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
     width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+  }
+  .contact-container:hover{
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+scale: 1.01;
   }
   
   .info-box {
