@@ -1,7 +1,6 @@
 import myImage from '../assets/image.png';
-import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import './Home.css';
-import { useEffect } from 'react';
 
 function Home() {
   const [text] = useTypewriter({
@@ -14,35 +13,27 @@ function Home() {
 
   return (
     <>
-
       <section id="home" className="firstSection">
         <div className="leftSection">
           <div id="hi">Hi there!</div>
-          <div>
-            I'm 
-            <span className='purple'>  Akash Rajput</span>
+          <div className="name">
+            I'm <span className='purple'>Akash Rajput</span>
           </div>
-          <div> and I am a passionate  </div>
-          <div className='purple' >{text}
-            <Cursor></Cursor></div>
-
+          <div className="description">and I am a passionate</div>
+          <div className="roles">
+            {text}
+            <Cursor />
+          </div>
+          <div id="homeButtons">
+            <a href='/' className="btn">Resume</a>
+            <a href='https://github.com/akash-0233/' className="btn">Github</a>
+          </div>
         </div>
         <div className="rightSection">
           <img src={myImage} alt="My Image" />
         </div>
       </section>
-      <hr className="HR"></hr>
-
-      {/* <section className="secondSection">
-        <span className='text-gray' >What i have done so far</span>
-        <h1>Work Experience</h1>
-        <div className="box">
-          <div className="vertical"></div>
-          <div className="vertical"></div>
-          <div className="vertical"></div>
-          <div className="vertical"></div>
-        </div>
-      </section> */}
+      <hr className="HR" />
     </>
   );
 }

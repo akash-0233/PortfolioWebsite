@@ -1,125 +1,115 @@
-import React from 'react';
 import './About.css';
-
+import ContactBox from './ContactBox';
 
 function About() {
   return (
     <section id="about" className="about">
       <div className="about-container">
-        <div className="profile-pic">AR</div>
-        <h1>Akash Rajput</h1>
-        <h2>Blockchain Developer, Web Developer, MERN Stack Developer</h2>
-        <p>
-          I am a self-taught developer with a passion for learning new things continuously. My journey in tech started with a curiosity that quickly grew into a full-fledged career. Over the years, I've honed my skills in both blockchain development and full-stack web development, building a diverse portfolio of projects and contributing to innovative solutions.
-        </p>
-        <p>
-          In blockchain development, I am proficient in Solidity, Hardhat, Ganache, Mocha, Chai, Web3.js, Ether.js, and Truffle. For web development, I excel in React.js, JavaScript, HTML, and CSS. On the backend, I have strong experience with Node, Express, MongoDB, and Postman.
-        </p>
-        <p>
-          I thrive on challenges and am always eager to take on new projects that push the boundaries of my knowledge and skills. Let's connect and explore the possibilities of working together!
-        </p>
-
+        <div className="profile-pic">
+          <img src="/image.png" alt="Project Imgage" />
+        </div>
+        <div className="text-content">
+          <h1>Akash Rajput</h1>
+          <h2>Blockchain Developer, Web Developer, MERN Stack Developer</h2>
+          <p>
+            I'm a self-taught developer with a passion for continuous learning. My tech journey began with curiosity, leading to a diverse portfolio in blockchain and full-stack web development.
+          </p>
+          <p>
+            I thrive on challenges and have experience in freelancing, completing MERN projects for clients. Let's connect and explore the possibilities of working together!
+          </p>
+        </div>
       </div>
+
+      <ContactBox></ContactBox>
       <div className="skills-container">
         <h3>Skillset</h3>
-        <h4>Technologies i use in my development.</h4>
+        <h4>Technologies I use in my development.</h4>
         <div>
           <div>
             <p className="skillName">Languages</p>
-            <p className="skillText">Programing languages I use:</p>
-
+            <p className="skillText">Programming languages I use:</p>
           </div>
-
-          <div className="skill-card" >
-            <div  >
-              <img  src="/solidity.png" alt="My Image" />
+          <div className="skill-card">
+            <div>
+              <img src="/solidity.png" alt="Solidity" />
               <h4>Solidity</h4>
             </div>
-            <div  >
-              <img  src="/javaScript.png" alt="My Image" />
+            <div>
+              <img src="/javaScript.png" alt="JavaScript" />
               <h4>JavaScript</h4>
             </div>
-            <div  >
-              <img  src="/html.png" alt="My Image" />
+            <div>
+              <img src="/html.png" alt="HTML" />
               <h4>HTML</h4>
             </div>
-            <div  >
-              <img  src="/css.png" alt="My Image" />
+            <div>
+              <img src="/css.png" alt="CSS" />
               <h4>CSS</h4>
             </div>
-
           </div>
-          <br></br>
-          <br></br>
+          <br />
+          <br />
           <div>
             <p className="skillName">Technologies</p>
             <p className="skillText">Technologies I use:</p>
-
           </div>
-
-          <div className="skill-card" >
-            <div  >
-              <img  src="/react.png" alt="My Image" />
+          <div className="skill-card">
+            <div>
+              <img src="/react.png" alt="React.js" />
               <h4>React.js</h4>
             </div>
-            <div  >
-              <img  src="/nodejs.png" alt="My Image" />
+            <div>
+              <img src="/nodejs.png" alt="Node.js" />
               <h4>Node.js</h4>
             </div>
-            <div  >
-              <img  src="/express.png" alt="My Image" />
+            <div>
+              <img src="/express.png" alt="Express.js" />
               <h4>Express.js</h4>
             </div>
-            <div  >
-              <img  src="/mongo.png" alt="My Image" />
+            <div>
+              <img src="/mongo.png" alt="MongoDB" />
               <h4>MongoDB</h4>
             </div>
-            <div  >
-              <img  src="/web3.png" alt="My Image" />
-              <h4>WEb3.js</h4>
+            <div>
+              <img src="/web3.png" alt="Web3.js" />
+              <h4>Web3.js</h4>
             </div>
-            <div  >
-              <img  src="/ether.png" alt="My Image" />
+            <div>
+              <img src="/ether.png" alt="Ether.js" />
               <h4>Ether.js</h4>
             </div>
-
           </div>
-          <br></br>
-          <br></br>
+          <br />
+          <br />
           <div>
             <p className="skillName">Tools</p>
-            <p className="skillText">Tools I use during my development:
-
-</p>
-
+            <p className="skillText">Tools I use during my development:</p>
           </div>
-
-          <div className="skill-card" >
-            <div  >
-              <img  src="/hardhat.png" alt="My Image" />
+          <div className="skill-card">
+            <div>
+              <img src="/hardhat.png" alt="Hardhat" />
               <h4>Hardhat</h4>
             </div>
-            <div  >
-              <img  src="/ganache.png" alt="My Image" />
+            <div>
+              <img src="/ganache.png" alt="Ganache" />
               <h4>Ganache</h4>
             </div>
-            <div  >
-              <img  src="/truffle.png" alt="My Image" />
+            <div>
+              <img src="/truffle.png" alt="Truffle" />
               <h4>Truffle</h4>
             </div>
-            <div  >
-              <img  src="/mocha.png" alt="My Image" />
+            <div>
+              <img src="/mocha.png" alt="Mocha" />
               <h4>Mocha</h4>
             </div>
-            <div  >
-              <img  src="/chai.png" alt="My Image" />
+            <div>
+              <img src="/chai.png" alt="Chai" />
               <h4>Chai</h4>
             </div>
-            <div  >
-              <img  src="/postman.png" alt="My Image" />
+            <div>
+              <img src="/postman.png" alt="Postman" />
               <h4>Postman</h4>
             </div>
-
           </div>
           <br></br>
           <br></br>
@@ -130,18 +120,18 @@ function About() {
 
           <div className="skill-card" >
             <div  >
-              <img  src="/motivated.png" alt="My Image" />
+              <img src="/motivated.png" alt="My Image" />
               <h4>Self-Motivated</h4>
             </div>
             <div  >
-              <img  src="/learner.png" alt="My Image" />
+              <img src="/learner.png" alt="My Image" />
               <h4>Continuous Learner</h4>
             </div>
             <div  >
-              <img  src="/problem-solving.png" alt="My Image" />
+              <img src="/problem-solving.png" alt="My Image" />
               <h4>Problem-solving</h4>
             </div>
-           
+
 
           </div>
         </div>

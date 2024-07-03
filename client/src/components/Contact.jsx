@@ -8,17 +8,17 @@ function Contact() {
       <form>
         <div>
           <label>Name</label>
-          <input type="text" name="name" />
+          <input placeholder='name' type="text" name="name" />
         </div>
         <div>
           <label>Email</label>
-          <input type="email" name="email" />
+          <input placeholder='email@gmail.com' type="email" name="email" />
         </div>
         <div>
           <label>Message</label>
-          <textarea name="message"></textarea>
+          <textarea placeholder='message' name="message"></textarea>
         </div>
-        <button type="submit">Send</button>
+        <button className="btn" type="submit">Send</button>
       </form>
     </section>
   );

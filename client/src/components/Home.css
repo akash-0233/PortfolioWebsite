@@ -1,102 +1,123 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
 .firstSection {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 23px 0;
+  margin: 4px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .firstSection > div {
   width: 60%;
-  /* background-color: red; */
 }
 
 .leftSection {
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin: 30px 0;
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: left;
+  line-height: 1.6;
 }
-#hi{
+
+#hi {
   font-size: 2rem;
   color: gray;
 }
 
-.rightSection{
+.leftSection div {
+  margin: 10px 0;
+}
+
+.leftSection .name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #5e08af;
+}
+
+.leftSection .description {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.leftSection .roles {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #5e08af;
+}
+
+#homeButtons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.rightSection {
   display: flex;
   justify-content: center;
 }
-.rightSection img{
+
+.rightSection img {
   width: 80%;
 }
 
-
-
-.HR{
+.HR {
   border: 0;
   background-color: rgb(10, 104, 186);
   height: 1.5px;
   margin: 40px 84px;
 }
 
-/* Second Section */
-.secondSection{
-  max-width:80vw;
-  margin: auto;
-  height: 900px;
-}
-
-.secondSection h1{
-  font-size: 1.9rem
-}
-
-.secondSection .box{
-  background-color: rgb(121, 18, 18);
-  width: 80vw;
-  height: 2px;
-  margin: 56px 0;
-  display:flex ;
-}
-
-.secondSection .vertical{
-  height: 93px;
-  width: 1px;
-  margin:0 100px;
-  background-color:rgb(121, 18, 18) ;
-}
-
-
-
 /* Utility classes */
-
-.purple{
-  color: rgb(94, 8, 175);
-}
-
-.text-gray{
+.text-gray {
   color: gray;
 }
+
 @media (max-width: 1000px) {
-  .firstSection > div{
+  .firstSection > div {
     width: fit-content;
   }
-  .rightSection img{
+
+  .rightSection img {
     width: 50%;
-    display: flex;
-    justify-content: center;
   }
-  .firstSection{
+
+  .firstSection {
     flex-direction: column-reverse;
   }
-  .leftSection{
-    font-size: 2rem;
-    /* background-color: red; */
+
+  .leftSection {
+    font-size: 1.2rem;
   }
-  #hi{
+
+  #hi {
     font-size: 1.5rem;
-    margin: 1rem 0 ;
+    margin: 1rem 0;
+  }
+
+  .leftSection .name {
+    font-size: 2.5rem;
+  }
+
+  .leftSection .description {
+    font-size: 1.2rem;
+  }
+
+  .leftSection .roles {
+    font-size: 1.5rem;
   }
 }
 
@@ -108,7 +129,6 @@
   .home {
     flex-direction: column;
   }
-
 
   .hero p {
     font-size: 1.2rem;

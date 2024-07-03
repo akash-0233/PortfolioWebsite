@@ -1,81 +1,93 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* About Container Styling */
 .about-container {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 4rem;
   margin: auto;
-  background-color: #f4f4f9;
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
   background-color: gray;
-  border-radius: 50%;
-  margin: 20px auto;
+  border-radius: 10px;
+  margin-right: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-  color: white;
-  text-transform: uppercase;
+  width: 50%;
+}
+
+.profile-pic img {
+  width: 80%;
+}
+
+.text-content {
+  width: 50%;
 }
 
 .about-container h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 0.2em;
+  text-align: center;
   color: #0289ff;
 }
 
 .about-container h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #777;
   margin-bottom: 1em;
 }
 
 .about-container p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #333;
-  line-height: 1.6;
-  margin-bottom: 1em;
+  line-height: 1.8;
+  margin-bottom: 1.2em;
+  text-indent: 2em;
 }
 
+/* Skills Container Styling */
 .skills-container {
   background-color: #f4f4f9;
-  padding-left: 3rem;
-  padding-bottom: 3rem;
-
+  padding: 3rem;
+  margin-top: 2rem;
+  border-radius: 10px;
 }
 
 .skills-container h3 {
-  font-size: 3rem;
-  margin-left: 3rem;
+  font-size: 3em;
+  margin-bottom: 1rem;
 }
 
-.skills-container>h4 {
-  font-size: 1.5rem;
-  margin: 1rem 0 0 3rem;
+.skills-container h4 {
+  font-size: 1.5em;
+  margin-bottom: 1.5rem;
+  color: #0289ff;
 }
 
 .skillName {
   margin: 1rem 0 0 5rem;
-  font-size: 1.5rem;
-  font-family: livvic-Bold;
-  font-size: 21px;
-  line-height: 27px;
+  font-size: 1.8em;
   font-weight: 700;
+  color: #333;
 }
 
 .skillText {
   margin: 0 0 1rem 5rem;
-  font-size: 1.2rem;
-  color: rgb(67, 66, 66);
-  font-family: livvic-semibold;
+  font-size: 1.4em;
+  color: #666;
 }
 
 .skill-card {
-  margin-bottom: 5px;
+  margin-bottom: 1.5rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -85,12 +97,13 @@
   text-align: center;
   margin-left: 2rem;
   width: 7rem;
-  margin-top: 0.5rem;  
+  margin-top: 0.5rem;
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 20%;
-
-  user-select: none; /* Prevents text selection */
-  -webkit-tap-highlight-color: transparent; /* Removes the tap highlight */
+  border-radius: 10px;
+  user-select: none;
+  /* Prevents text selection */
+  -webkit-tap-highlight-color: transparent;
+  /* Removes the tap highlight */
 }
 
 .skill-card div img {
@@ -98,7 +111,7 @@
   height: 100px;
   object-fit: cover;
   background-color: #dfdfdf;
-  border-radius: 35%;
+  border-radius: 10px;
   padding: 10px;
   transition: scale 0.3s;
 }
@@ -107,11 +120,6 @@
   scale: 1.1;
   background-color: #dfdfdf39;
 }
-
-
-
-
-
 
 @keyframes fadeIn {
   from {
@@ -132,36 +140,64 @@ p,
   animation: fadeIn 1.5s ease-in;
 }
 
-
 @media (max-width: 768px) {
   .about-container {
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;
   }
-  
-  .skills-container{
-    padding-left: 0;
+
+  .text-content {
+    width: 100%;
   }
+
+  .text-content h2 {
+    font-size: 1.4em;
+    color: #777;
+    margin-bottom: 1em;
+    margin-left: 1rem;
+  }
+
+  .text-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+  }
+
+  .profile-pic {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+
+  .skills-container {
+    padding: 1rem;
+  }
+
 
   .skill-card div img {
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 90%;
   }
 
-  .skill-card div{
-    width: 5rem;
+  .skill-card div {
+    width: 5.5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
 
+  .skill-card div h4 {
+    font-size: 1em;
+    padding-bottom: 0;
+    margin-top: 5px;
   }
 
   .skillName {
     margin: 1rem 0 0 3rem;
     font-size: 1.5rem;
-    font-family: livvic-Bold;
-    font-size: 21px;
-    line-height: 27px;}
-  
-  .skillText {
-    margin: 0 0 1rem 3rem;
-    font-family: livvic-semibold;
   }
 
+  .skillText {
+    margin: 0 0 1rem 3rem;
+    font-size: 1.2rem;
+  }
 }

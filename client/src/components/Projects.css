@@ -1,16 +1,16 @@
 .projects-container {
-  padding: 1rem 1rem;
+  padding: 1rem 3rem;
   margin: 3rem auto;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.projects-container h2 {
   text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 3em;
   color: #333;
+  margin: 4rem 0 4rem 0;
 }
 
 .freelancingCards .card {
@@ -68,6 +68,7 @@ h2 {
   background-color: #0056b3;
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
 }
 
 .btn:active {
