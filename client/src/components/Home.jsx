@@ -1,5 +1,6 @@
 import myImage from '../assets/image.png';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { Helmet } from 'react-helmet-async';
 import './Home.css';
 
 function Home() {
@@ -13,6 +14,9 @@ function Home() {
 
   return (
     <>
+      <Helmet>
+        <meta name="description" content="Welcome to my portfolio homepage" />
+      </Helmet>
       <section id="home" className="firstSection">
         <div className="leftSection">
           <div id="hi">Hi there!</div>
