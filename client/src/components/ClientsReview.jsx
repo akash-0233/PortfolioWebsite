@@ -2,20 +2,11 @@ import './ClientsReview.css';
 
 const reviews = [
   {
-    name: 'John Doe',
-    feedback: 'Fantastic work! Really impressed with the quality and dedication.',
-    company: 'ABC Corp'
-  },
-  {
-    name: 'Jane Smith',
-    feedback: 'A pleasure to work with. Highly recommended!',
-    company: 'XYZ Ltd'
-  },
-  {
-    name: 'Michael Brown',
-    feedback: 'Delivered exactly what we needed. Great job!',
-    company: 'Tech Solutions'
+    name: 'Rohit Bedwal',
+    feedback: 'Working with Akash Rajput has been a fantastic experience. The website they created for us is exactly what we needed to support students aspiring to careers in aviation. The design is intuitive, and the functionality is flawless. We now have a platform where students can easily access our monthly magazine, study materials, and blog posts. Highly recommend their services!',
+    company: 'Futurepilotsclub.com'
   }
+  
 ];
 
 const ClientsReview = () => {
@@ -26,7 +17,7 @@ const ClientsReview = () => {
         {reviews.map((review, index) => (
           <div className="review" key={index}>
             <p className="feedback">"{review.feedback}"</p>
-            <p className="client-name">- {review.name}, {review.company}</p>
+            <p className="client-name">{review.name}, <a href='https://www.futurepilotsclub.com' >{review.company}</a></p>
           </div>
         ))}
       </div>

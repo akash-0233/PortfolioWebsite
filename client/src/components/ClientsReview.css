@@ -16,7 +16,7 @@
   }
   
   .review {
-    width: 300px;
+    width: 400px;
     margin: 10px;
     padding: 20px;
     background-color: #fff;
@@ -34,7 +34,9 @@
   .client-name {
     font-size: 1rem;
     font-weight: bold;
-    text-align: right;
+    text-align: left;
+    padding-left: 50%;
+    
   }
   
   @media (max-width: 768px) {
@@ -45,6 +47,9 @@
     .review {
       width: 100%;
       margin: 10px 0;
+    }
+    .client-name{
+      padding-left: 40%;
     }
   }
   
