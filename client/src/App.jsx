@@ -10,10 +10,8 @@ function App() {
   return (
     <div>
       <Helmet>
-        <title>Akash Rajput | Blockchain developer, Fullstact developer</title>
         <meta name="description" content="This is my portfolio website" />
         <meta name="keywords" content="portfolio, web developer, blockchain developer, React, JavaScript, projects, fullstact developer" />
-
       </Helmet>
       <Navbar />
       <Home />
